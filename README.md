@@ -1,0 +1,2 @@
+# WEnd-Case
+Return SetError(3, 0, False) EndIf ; Which comparison method to use? Switch ($sComparison)   ; Keep sleeping until the Variable = the Val Case "=" While (Eval($sVar) &lt;> $sVal) Sleep($iTime) WEnd Case "&lt;>" While (Eval($sVar) = $sVal) Sleep($iTime) WEnd Case ">=" While (Eval($sVar) &lt;= $sVal) Sleep($iTime) WEnd While (Eval($sVar) >= $sVal) Sleep($iTime) WEnd Case ">" While (Eval($sVar) &lt; $sVal) Sleep($iTime) WEnd Case "&lt;" While (Eval($sVar) > $sVal) Sleep($iTime)  WEnd     EndSwitch     Return True EndFunc
